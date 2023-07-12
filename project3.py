@@ -4,7 +4,7 @@ import time
 OPERATORS = ["+", "-", "*"]
 MIN_OPERAND = 3
 MAX_OPERAND = 12
-TOTAL_PROBLEMS = 10
+TOTAL_PROBLEMS = 20
 
 
 def generate_problem():
