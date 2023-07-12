@@ -35,4 +35,4 @@ end_time = time.time()
 total_time = round(end_time - start_time, 2)
 
 print("----------------------")
-print(f"Отлично! Ты решил {TOTAL_PROBLEMS} за {total_time} секунд! Ты допустил {wrong} ошибок")
+print(f"Отлично! Твой результат: {TOTAL_PROBLEMS} примеров за {total_time} секунд! Ошибок: {wrong}.")
