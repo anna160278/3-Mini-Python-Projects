@@ -18,7 +18,7 @@ def generate_problem():
 
 
 wrong = 0
-input("Press enter to start!")
+input("Нажми enter чтобы начать!")
 print("----------------------")
 
 start_time = time.time()
@@ -26,7 +26,7 @@ start_time = time.time()
 for i in range(TOTAL_PROBLEMS):
     expr, answer = generate_problem()
     while True:
-        guess = input("Problem #" + str(i + 1) + ": " + expr + " = ")
+        guess = input("Задача #" + str(i + 1) + ": " + expr + " = ")
         if guess == str(answer):
             break
         wrong += 1
@@ -35,4 +35,4 @@ end_time = time.time()
 total_time = round(end_time - start_time, 2)
 
 print("----------------------")
-print("Nice work! You finished in", total_time, "seconds!")
+print(f"Отлично! Ты решил {TOTAL_PROBLEMS} за {total_time} секунд! Ты допустил {wrong} ошибок")
